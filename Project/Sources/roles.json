@@ -1,0 +1,148 @@
+{
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "Project",
+				"type": "dataclass",
+				"read": [
+					"manageProjects",
+					"enterTimesheets"
+				],
+				"create": [
+					"manageProjects"
+				],
+				"update": [
+					"manageProjects"
+				],
+				"drop": [
+					"manageProjects"
+				],
+				"describe": [
+					"manageProjects"
+				],
+				"execute": [
+					"manageProjects"
+				]
+			},
+			{
+				"applyTo": "Staff",
+				"type": "dataclass",
+				"read": [
+					"manageStaff",
+					"enterTimesheets"
+				],
+				"create": [
+					"manageStaff"
+				],
+				"update": [
+					"manageStaff"
+				],
+				"describe": [
+					"manageStaff"
+				],
+				"execute": [
+					"manageStaff"
+				]
+			},
+			{
+				"applyTo": "Client",
+				"type": "dataclass",
+				"read": [
+					"manageClients",
+					"enterTimesheets"
+				],
+				"create": [
+					"manageClients"
+				],
+				"update": [
+					"manageClients"
+				],
+				"drop": [
+					"manageClients"
+				],
+				"describe": [
+					"manageClients"
+				],
+				"execute": [
+					"manageClients"
+				]
+			},
+			{
+				"applyTo": "Timesheet",
+				"type": "dataclass",
+				"read": [
+					"viewAllTimesheets",
+					"enterTimesheets"
+				],
+				"create": [
+					"viewAllTimesheets",
+					"enterTimesheets"
+				],
+				"update": [
+					"viewAllTimesheets",
+					"enterTimesheets"
+				],
+				"drop": [
+					"viewAllTimesheets",
+					"enterTimesheets"
+				],
+				"describe": [
+					"viewAllTimesheets",
+					"enterTimesheets"
+				],
+				"execute": [
+					"viewAllTimesheets",
+					"enterTimesheets"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+			"id": "9ZjCC47pg8oK4a4LGxgWvH",
+			"privilege": "manageProjects",
+			"includes": []
+		},
+		{
+			"id": "5rZTsCeLGrrjHMNvnW9Mo3",
+			"privilege": "manageStaff",
+			"includes": []
+		},
+		{
+			"id": "r2fqAZkVrgxvxGPcH7VMvd",
+			"privilege": "manageClients",
+			"includes": []
+		},
+		{
+			"id": "nGusYahGYK3xCUoWubLi68",
+			"privilege": "viewAllTimesheets",
+			"includes": []
+		},
+		{
+			"id": "henQcjAxUPMEw1AJcTbFsd",
+			"privilege": "enterTimesheets",
+			"includes": []
+		}
+	],
+	"roles": [
+		{
+			"id": "7VcmkCjdFg257XjrYHHytq",
+			"role": "Manager",
+			"privileges": [
+				"viewAllTimesheets",
+				"manageStaff",
+				"manageProjects",
+				"manageClients",
+				"enterTimesheets",
+				"guest"
+			]
+		},
+		{
+			"id": "ksHGA9GNqWgbtBT7nuCTfW",
+			"role": "Staff",
+			"privileges": [
+				"enterTimesheets"
+			]
+		}
+	]
+}

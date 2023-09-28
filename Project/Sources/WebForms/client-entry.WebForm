@@ -1,0 +1,423 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [],
+		"styles": []
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"className": "bg-white h-full w-full px-6",
+				"airyMode": false
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"1rYnnC9yNi"
+			],
+			"linkedNodes": {}
+		},
+		"1rYnnC9yNi": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"justifyContent": "flex-start",
+					"alignItems": "start",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"5E8876JGuB",
+				"8VHLhB0xxZ"
+			],
+			"linkedNodes": {}
+		},
+		"Uy-uoxv0S9": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Save",
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "exExLYdgfyokak9momWKfJ",
+						"events": [
+							"onclick"
+						],
+						"action": "save",
+						"datasource": {
+							"name": "client",
+							"type": "entity",
+							"namespace": "clientEdit"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "xxVZGhhdbbStpVuymGT2M4",
+						"events": [
+							"onclick"
+						],
+						"action": "all",
+						"datasource": {
+							"name": "clients",
+							"from": "",
+							"type": "entitysel",
+							"namespace": "clientEdit"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "8VHLhB0xxZ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "MmbnXYPiiF"
+			}
+		},
+		"MmbnXYPiiF": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": [],
+				"icon": "fa-star"
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "Uy-uoxv0S9",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"7wfKINryUD": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "5E8876JGuB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "ON-iYccmsy",
+				"input": "Rdnqr-Vq7f"
+			}
+		},
+		"ON-iYccmsy": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Name",
+				"deletable": true
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "7wfKINryUD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"Rdnqr-Vq7f": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "text",
+				"datasource": "clientEdit:client.Name",
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "7wfKINryUD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"64nqNXqBVG": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "5E8876JGuB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "NlVwqw7c8Z",
+				"input": "BQj_DC4z07"
+			}
+		},
+		"NlVwqw7c8Z": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Abbreviation"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "64nqNXqBVG",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"BQj_DC4z07": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "text",
+				"datasource": "clientEdit:client.Abrev"
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "64nqNXqBVG",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"MqtuxWYFTx": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "top"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "5E8876JGuB",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "v0Ct24EgSi",
+				"input": "9k4rYTtLJV"
+			}
+		},
+		"v0Ct24EgSi": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Description"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "MqtuxWYFTx",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"9k4rYTtLJV": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "text",
+				"datasource": "clientEdit:client.Description",
+				"style": {
+					"display": "flex",
+					"justifyContent": "flex-end"
+				}
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "MqtuxWYFTx",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"5E8876JGuB": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "column",
+					"gap": "10px",
+					"justifyContent": "flex-end"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "1rYnnC9yNi",
+			"hidden": false,
+			"nodes": [
+				"7wfKINryUD",
+				"64nqNXqBVG",
+				"MqtuxWYFTx"
+			],
+			"linkedNodes": {}
+		},
+		"8VHLhB0xxZ": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"gap": "10px",
+					"justifyContent": "flex-start"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "1rYnnC9yNi",
+			"hidden": false,
+			"nodes": [
+				"Uy-uoxv0S9",
+				"jSY8UEnHHc"
+			],
+			"linkedNodes": {}
+		},
+		"jSY8UEnHHc": {
+			"type": {
+				"resolvedName": "Button"
+			},
+			"isCanvas": false,
+			"props": {
+				"text": "Delete",
+				"classNames": [],
+				"events": [
+					{
+						"type": "simple-action",
+						"id": "tZcp7FxKq1BuqFCKzUrhp1",
+						"events": [
+							"onclick"
+						],
+						"action": "remove",
+						"datasource": {
+							"name": "client",
+							"from": "clients",
+							"type": "entity",
+							"namespace": "clientEdit"
+						},
+						"feedback": {
+							"enabled": true
+						}
+					},
+					{
+						"type": "simple-action",
+						"id": "gcXhnhxqPv6f57p1qsam9P",
+						"events": [
+							"onclick"
+						],
+						"action": "all",
+						"datasource": {
+							"name": "clients",
+							"from": "",
+							"type": "entitysel",
+							"namespace": "clientEdit"
+						}
+					}
+				],
+				"iconPosition": "hidden",
+				"style": {
+					"display": "flex"
+				}
+			},
+			"displayName": "Button",
+			"custom": {},
+			"parent": "8VHLhB0xxZ",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"icon": "wfFDVA0FcL"
+			}
+		},
+		"wfFDVA0FcL": {
+			"type": {
+				"resolvedName": "Icon"
+			},
+			"isCanvas": false,
+			"props": {
+				"classNames": [],
+				"events": []
+			},
+			"displayName": "Icon",
+			"custom": {},
+			"parent": "jSY8UEnHHc",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

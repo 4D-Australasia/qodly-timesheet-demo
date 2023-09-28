@@ -1,0 +1,29 @@
+{
+	"users": {
+		"designer": {
+			"password": "$2y$10$6.Mh4YUL7NfBbyb3ZH9BwOuahSSeRRGo6gV7FS66pQln6GL0eomDW",
+			"alias": "Designer"
+		},
+		"administrator": {
+			"alias": "Administrator"
+		},
+		"al": {
+			"password": "$2y$10$7Bk10T60pVs9czl/WaMQzeGeZrv28lKv3rI4H9BrrhSTqcLfNaArW"
+		}
+	},
+	"sqlSchemaGranters": {
+		"DEFAULT_SCHEMA": {
+			"readOnlyAccessGroup": "*",
+			"readWriteAccessGroup": "*",
+			"allAccessGroup": ""
+		}
+	},
+	"settings": {
+		"localGenericWebUser": "Designer",
+		"designAccessGroup": "*",
+		"localMobileAccessGroupRW": "*",
+		"remoteMobileAccessGroupRW": "*",
+		"remoteGenericWebUser": "Designer",
+		"remoteDefaultUser": ""
+	}
+}

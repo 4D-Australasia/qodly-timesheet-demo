@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="timesheets" uuid="79FC507DEB39449AA8F982848DEE5557" collation_locale="en-au">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Timesheet" uuid="2E8E56F596224EFA988770FBE6F92F45" id="1">
+		<field name="Id" uuid="16D2674737844936864B46B615726D90" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Staff_Id" uuid="C773264310864201AC05F0345191D427" type="10" store_as_UUID="true" id="2"/>
+		<field name="Client_Id" uuid="1FC6F0C6851942D6AC9A01B51681F861" type="10" store_as_UUID="true" id="3"/>
+		<field name="Project_Id" uuid="39439F235E35433CBCEC3C5DB02301C4" type="10" store_as_UUID="true" id="4"/>
+		<field name="Date" uuid="87EDEE9793A241D5BD6EF2775C7F7797" type="8" id="5"/>
+		<field name="StartTime" uuid="E69F5F89976645E5B0629A2B2EBC62B6" type="10" id="6"/>
+		<field name="EndTime" uuid="A2D3224F68164B1BA3348E0F64F2E6E6" type="10" id="7"/>
+		<field name="Reference" uuid="22F6815530964654A47163C3992EC707" type="10" id="8"/>
+		<field name="Notes" uuid="11DA0BD571804AA7967EADA1181FA2EF" type="10" id="9"/>
+		<primary_key field_name="Id" field_uuid="16D2674737844936864B46B615726D90"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="15">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="40" top="40" width="152.36227416992" height="372.51226806641"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Staff" uuid="DF02A6C1D9214AA5B929DF89AA01BAAE" id="2">
+		<field name="Id" uuid="2D9DA3574F8842589C6337DB3FD8C8AF" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="FirstName" uuid="85E1BDC3DF4F4AE0AE4D9FB1C697501F" type="10" id="2"/>
+		<field name="Surname" uuid="93A946A9ED444EFC8DFCA5DFF9BFA2D2" type="10" id="3"/>
+		<field name="Initials" uuid="4901616EA1624E8CB47E691432542CB6" type="10" id="4"/>
+		<field name="email" uuid="83A0567D18D84D09982413FC95D986C0" type="10" id="5"/>
+		<primary_key field_name="Id" field_uuid="2D9DA3574F8842589C6337DB3FD8C8AF"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="231.328125" top="40.321975708008" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Client" uuid="DE7C398C98804DC9981638BD0C3CCBFE" id="3">
+		<field name="Id" uuid="8C3CC51496C846F68968073F7C71381B" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Name" uuid="39DFF3F12DF74D258090795C09FECF41" type="10" id="2"/>
+		<field name="Abrev" uuid="575B995C30164D1CB8417AAD30B67A53" type="10" id="3"/>
+		<field name="Description" uuid="917435A97DA143908BB08F1FAF5FAAC1" type="10" id="4"/>
+		<primary_key field_name="Id" field_uuid="8C3CC51496C846F68968073F7C71381B"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="440" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Project" uuid="0D6BAAB4D14B4DB08C206B1799A9D118" id="4">
+		<field name="Id" uuid="D5754268CE7340F2BCDC4CD34A378191" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Name" uuid="AF0D726CAEE644B49E1F7C77EE7468C2" type="10" id="2"/>
+		<field name="Description" uuid="7971667C18744D80AF1CADC71C59D572" type="10" id="3"/>
+		<field name="Client_Id" uuid="07A452AE16904B19A35E873CCE2F95EB" type="10" store_as_UUID="true" id="4"/>
+		<primary_key field_name="Id" field_uuid="D5754268CE7340F2BCDC4CD34A378191"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="640" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Test" uuid="969EFE77B87A40B1BE47D4C98A44467D" id="5">
+		<field name="Id" uuid="8C9461AE537B47FD8C94733F84E9CCD3" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Name" uuid="E997AEA11B874803AED44AA2DEFAA6F2" type="10" id="2"/>
+		<field name="Date" uuid="044C16F3F2334A3E8A2F01AA890BDF8E" type="8" id="3"/>
+		<field name="Time" uuid="772A8C6003B34DF392B7C8F040444B7B" type="9" id="4"/>
+		<primary_key field_name="Id" field_uuid="8C9461AE537B47FD8C94733F84E9CCD3"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="287" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<relation uuid="F5B88AA10CD44A91A7747E28F0DFFF19" name_Nto1="Staff" name_1toN="Timesheets" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="C773264310864201AC05F0345191D427" name="Staff_Id">
+				<table_ref uuid="2E8E56F596224EFA988770FBE6F92F45" name="Timesheet"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="2D9DA3574F8842589C6337DB3FD8C8AF" name="Id">
+				<table_ref uuid="DF02A6C1D9214AA5B929DF89AA01BAAE" name="Staff"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="DB2AA50F7B7444579189170254BAB54E" name_Nto1="Client" name_1toN="Timesheets" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="1FC6F0C6851942D6AC9A01B51681F861" name="Client_Id">
+				<table_ref uuid="2E8E56F596224EFA988770FBE6F92F45" name="Timesheet"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="8C3CC51496C846F68968073F7C71381B" name="Id">
+				<table_ref uuid="DE7C398C98804DC9981638BD0C3CCBFE" name="Client"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="665D26A248A949DA8FD116BBD12E6CD3" name_Nto1="Project" name_1toN="Timesheets" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="39439F235E35433CBCEC3C5DB02301C4" name="Project_Id">
+				<table_ref uuid="2E8E56F596224EFA988770FBE6F92F45" name="Timesheet"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="D5754268CE7340F2BCDC4CD34A378191" name="Id">
+				<table_ref uuid="0D6BAAB4D14B4DB08C206B1799A9D118" name="Project"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="false" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<relation uuid="E16EE90FB75E44BB91D7028F9E961B74" name_Nto1="Client" name_1toN="Projects" auto_load_Nto1="false" auto_load_1toN="false" foreign_key="false" state="1">
+		<related_field kind="source">
+			<field_ref uuid="07A452AE16904B19A35E873CCE2F95EB" name="Client_Id">
+				<table_ref uuid="0D6BAAB4D14B4DB08C206B1799A9D118" name="Project"/>
+			</field_ref>
+		</related_field>
+		<related_field kind="destination">
+			<field_ref uuid="8C3CC51496C846F68968073F7C71381B" name="Id">
+				<table_ref uuid="DE7C398C98804DC9981638BD0C3CCBFE" name="Client"/>
+			</field_ref>
+		</related_field>
+		<relation_extra entry_wildchar="false" entry_create="false" choice_field="0" entry_autofill="false">
+			<editor_relation_info via_point_x="-1" via_point_y="-1" prefers_left="true" smartlink="true">
+				<color red="255" green="255" blue="255" alpha="0"/>
+			</editor_relation_info>
+		</relation_extra>
+	</relation>
+	<index kind="regular" unique_keys="true" uuid="03EC5EEC555F49F5B055D7B8B32A90CF" type="7">
+		<field_ref uuid="8C9461AE537B47FD8C94733F84E9CCD3" name="Id">
+			<table_ref uuid="969EFE77B87A40B1BE47D4C98A44467D" name="Test"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="61B3875450CC45F2AC8ECAB41FD9B99E" type="7">
+		<field_ref uuid="2D9DA3574F8842589C6337DB3FD8C8AF" name="Id">
+			<table_ref uuid="DF02A6C1D9214AA5B929DF89AA01BAAE" name="Staff"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="85E954BE901643D7A04B859AF82C4CBB" type="7">
+		<field_ref uuid="16D2674737844936864B46B615726D90" name="Id">
+			<table_ref uuid="2E8E56F596224EFA988770FBE6F92F45" name="Timesheet"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="881CA09BA48C41FBB29255820C1CDECA" type="7">
+		<field_ref uuid="8C3CC51496C846F68968073F7C71381B" name="Id">
+			<table_ref uuid="DE7C398C98804DC9981638BD0C3CCBFE" name="Client"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FAA386EC1DF54BF7B2C4A0BFC0C6895B" type="7">
+		<field_ref uuid="D5754268CE7340F2BCDC4CD34A378191" name="Id">
+			<table_ref uuid="0D6BAAB4D14B4DB08C206B1799A9D118" name="Project"/>
+		</field_ref>
+	</index>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

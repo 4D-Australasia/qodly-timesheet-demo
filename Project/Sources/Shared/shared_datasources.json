@@ -1,0 +1,71 @@
+{
+	"clientEdit": [
+		{
+			"id": "clients",
+			"type": "entitysel",
+			"dataclass": "Client",
+			"namespace": "clientEdit",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100,
+			"events": []
+		},
+		{
+			"id": "client",
+			"type": "entity",
+			"dataclass": "Client",
+			"from": "clients",
+			"namespace": "clientEdit",
+			"initialValue": "first",
+			"depth": null
+		}
+	],
+	"client": [],
+	"staffEdit": [
+		{
+			"id": "staffSelection",
+			"type": "entitysel",
+			"dataclass": "Staff",
+			"namespace": "staffEdit",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "staff",
+			"type": "entity",
+			"dataclass": "Staff",
+			"from": "staffSelection",
+			"namespace": "staffEdit",
+			"initialValue": "first",
+			"depth": null
+		}
+	],
+	"timesheetEntry": [
+		{
+			"id": "timesheetsDisplayed",
+			"type": "entitysel",
+			"dataclass": "Timesheet",
+			"namespace": "timesheetEntry",
+			"initialValue": "all",
+			"depth": null,
+			"pageSize": 100
+		},
+		{
+			"id": "timesheetEdit",
+			"type": "entity",
+			"dataclass": "Timesheet",
+			"from": "timesheetsDisplayed",
+			"namespace": "timesheetEntry",
+			"initialValue": "first",
+			"depth": null
+		},
+		{
+			"id": "timesheetSearchParams",
+			"type": "scalar",
+			"namespace": "timesheetEntry",
+			"dataType": "object",
+			"initialValue": {}
+		}
+	]
+}
