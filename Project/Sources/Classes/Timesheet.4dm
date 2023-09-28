@@ -37,7 +37,10 @@ exposed Function fromTimeString($ts : Text)->$timeObj : Object
 	$c:=Split string:C1554($ts; ":")
 	$timeObj:=New object:C1471
 	$timeObj.hours:=Num:C11($c[0])
-	$timeObj.minutes:=Num:C11($c[0])
+	$timeObj.minutes:=Num:C11($c[1])
 	
 exposed Function toTimeString($h : Text; $m : Text)->$ts : Text
 	$ts:=$h+":"+$m
+	// test this is synced
+	
+	

@@ -19,24 +19,6 @@
 				"pageSize": 100
 			},
 			{
-				"id": "client",
-				"type": "entity",
-				"dataclass": "Client",
-				"from": "clients",
-				"namespace": "",
-				"initialValue": "first",
-				"depth": null
-			},
-			{
-				"id": "currentStaff",
-				"type": "entity",
-				"dataclass": "Staff",
-				"from": "staff",
-				"namespace": "",
-				"initialValue": "first",
-				"depth": null
-			},
-			{
 				"id": "startH",
 				"type": "scalar",
 				"namespace": "",
@@ -70,6 +52,13 @@
 				"namespace": "",
 				"dataType": "string",
 				"initialValue": ""
+			},
+			{
+				"id": "testClient",
+				"type": "entity",
+				"dataclass": "Client",
+				"initialValue": "",
+				"depth": null
 			}
 		],
 		"styles": []
@@ -166,18 +155,17 @@
 				"classNames": [],
 				"events": [
 					{
-						"type": "method",
-						"dataclass": "Timesheet",
+						"type": "simple-action",
+						"id": "wGPhqvBWdcwCSPbDPCQxyV",
 						"events": [
 							"onclick"
 						],
-						"id": "7L469ZjDAhLSMX8vC4Ztux",
-						"method": "ds.Timesheet.createToday",
-						"params": [],
-						"returns": {
-							"name": "ts",
-							"type": "cs.TimesheetEntity",
-							"datasource": "timesheetEntry:timesheetEdit"
+						"action": "create",
+						"datasource": {
+							"name": "timesheetEdit",
+							"from": "timesheetsDisplayed",
+							"type": "entity",
+							"namespace": "timesheetEntry"
 						}
 					}
 				],
@@ -287,7 +275,8 @@
 						},
 						"feedback": {
 							"enabled": true
-						}
+						},
+						"disabled": false
 					}
 				],
 				"iconPosition": "hidden",
@@ -421,37 +410,13 @@
 			"props": {
 				"iterable": true,
 				"classNames": [],
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "TimesheetEntity",
-						"events": [
-							"onselect"
-						],
-						"id": "dFpjqi3U1ATbktAUsGZT7o",
-						"method": "timesheetEdit.setStaff",
-						"params": [
-							{
-								"name": "staff",
-								"type": "cs.StaffEntity",
-								"datasource": "currentStaff",
-								"id": "kb2LKZh16qJd35wPEauPKv",
-								"isHardCoded": false,
-								"hardCodedValue": ""
-							}
-						],
-						"namespace": "timesheetEntry",
-						"returns": {
-							"name": "$0",
-							"type": "Variable"
-						}
-					}
-				],
+				"events": [],
 				"template": "{{ length }} items",
 				"rowsNumber": 5,
 				"datasource": "staff",
 				"placeholder": "Staff",
-				"currentElement": "currentStaff"
+				"currentElement": "timesheetEntry:timesheetEdit.Staff",
+				"iterator": "$This"
 			},
 			"displayName": "Select Box",
 			"custom": {},
@@ -502,7 +467,8 @@
 				"rowsNumber": 5,
 				"datasource": "clients",
 				"placeholder": "Client",
-				"currentElement": "client"
+				"currentElement": "timesheetEntry:timesheetEdit.Client",
+				"iterator": "$This"
 			},
 			"displayName": "Select Box",
 			"custom": {},

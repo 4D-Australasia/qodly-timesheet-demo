@@ -152,7 +152,7 @@
 						"externalLink": false,
 						"loader": "6JxDgOUzlm",
 						"parent": "webform-loader",
-						"target": "timesheet-entry"
+						"target": "timesheet-entry-combined"
 					}
 				],
 				"iconPosition": "hidden",
@@ -176,7 +176,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -227,7 +228,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},
@@ -278,7 +280,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},

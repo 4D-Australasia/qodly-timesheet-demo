@@ -7,9 +7,9 @@ var $tTest : Text
 
 //$hTest2:=ds.formatTime($tTest)
 
-$tTest3:=ds:C1482.Timesheet.toTimeString("3"; "50")
+//$tTest3:=ds.Timesheet.toTimeString("3"; "50")
 
 
-$oTest:=ds:C1482.Timesheet.fromTimeString("06:00")
+//$oTest:=ds.Timesheet.fromTimeString("06:00")
 
-ds:C1482.Timesheet.clearAll()
+ds:C1482.Timesheet.all().drop()

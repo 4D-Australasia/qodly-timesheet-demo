@@ -1,14 +1,17 @@
 Class extends Entity
 
-exposed Function setStaff($staff : cs:C1710.StaffEntity)
-	This:C1470.Staff:=$staff
+exposed Function setStaff($staff : cs.StaffEntity)
+	This.Staff_Id:=$staff.Id
+
+exposed Function setClient($client: cs.ClientEntity)
+	trace
+	This.Client_Id:=$client.Id
 	
 	// duration in hours
 exposed Function get duration()->$duration : Real
-	TRACE:C157
-	If ((This:C1470.EndTime#"") & (This:C1470.StartTime#""))
-		$oStart:=ds:C1482.Timesheet.fromTimeString(This:C1470.StartTime)
-		$oEnd:=ds:C1482.Timesheet.fromTimeString(This:C1470.EndTime)
+	If ((This.StartTime#Null) & (This.EndTime#Null) & (This.EndTime#"") & (This.StartTime#""))
+		$oStart:=ds.Timesheet.fromTimeString(This.StartTime)
+		$oEnd:=ds.Timesheet.fromTimeString(This.EndTime)
 		
 		$lHours:=$oEnd.hours-$oStart.hours
 		$lMinutes:=$oEnd.minutes-$oStart.minutes
@@ -23,3 +26,13 @@ exposed Function get duration()->$duration : Real
 		$duration:=0
 	End if 
 	
+	
+exposed Function testSave()->$test : Text
+	TRACE
+	
+	This.save()
+	$test:="done"
+
+exposed Function testSave2()->$test:text
+	This.save()
+	$test:="done2"
