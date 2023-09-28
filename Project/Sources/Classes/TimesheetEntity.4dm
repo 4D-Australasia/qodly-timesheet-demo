@@ -22,3 +22,4 @@ exposed Function get duration()->$duration : Real
 	Else 
 		$duration:=0
 	End if 
+	

@@ -683,27 +683,28 @@
 						"events": [
 							"onchange"
 						],
-						"id": "4FZYJv467YdCJaffbxf5PZ",
+						"id": "heMsRuzmSUAs3FrRjv7NzL",
 						"method": "ds.Timesheet.toTimeString",
 						"params": [
 							{
-								"name": "hours",
+								"name": "h",
 								"type": "Text",
 								"datasource": "startH",
-								"id": "gJGhxKP8avUWFwwGdS4gnC"
+								"id": "iep53wE9M9FSfD4TdogNSJ"
 							},
 							{
-								"name": "minutes",
+								"name": "m",
 								"type": "Text",
 								"datasource": "startM",
-								"id": "f3XVbrJBKTy4rZypoJAbRt"
+								"id": "dxBpFtedWQFnd3zEVwgpa2"
 							}
 						],
 						"returns": {
-							"name": "tTime",
+							"name": "timeString",
 							"type": "Text",
 							"datasource": "timesheetEntry:timesheetEdit.StartTime"
-						}
+						},
+						"feedback": true
 					}
 				],
 				"deletable": false,
@@ -1218,8 +1219,8 @@
 										"strikethrough": false
 									}
 								],
-								"dsType": "duration",
-								"format": "hh:mm"
+								"dsType": "string",
+								"format": ""
 							},
 							{
 								"text": ""
@@ -1479,7 +1480,8 @@
 			"isCanvas": false,
 			"props": {
 				"classNames": [],
-				"events": []
+				"events": [],
+				"icon": "fa-star"
 			},
 			"displayName": "Icon",
 			"custom": {},
