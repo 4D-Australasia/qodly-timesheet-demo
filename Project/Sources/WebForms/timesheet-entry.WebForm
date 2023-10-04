@@ -17,65 +17,6 @@
 				"initialValue": "all",
 				"depth": null,
 				"pageSize": 100
-			},
-			{
-				"id": "startH",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": ""
-			},
-			{
-				"id": "startM",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": ""
-			},
-			{
-				"id": "endH",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": ""
-			},
-			{
-				"id": "endM",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": ""
-			},
-			{
-				"id": "testSave",
-				"type": "scalar",
-				"namespace": "",
-				"dataType": "string",
-				"initialValue": ""
-			},
-			{
-				"id": "testClient",
-				"type": "entity",
-				"dataclass": "Client",
-				"initialValue": "",
-				"depth": null
-			},
-			{
-				"id": "testTS",
-				"type": "entitysel",
-				"dataclass": "Timesheet",
-				"namespace": "",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
-			},
-			{
-				"id": "ts",
-				"type": "entitysel",
-				"dataclass": "Timesheet",
-				"initialValue": "all",
-				"depth": null,
-				"pageSize": 100
 			}
 		],
 		"styles": []
@@ -952,7 +893,8 @@
 			"props": {
 				"events": [],
 				"moveable": false,
-				"text": "Start Time"
+				"text": "Start Time",
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -971,7 +913,10 @@
 				"deletable": false,
 				"className": "fd-input w-full bg-transparent",
 				"type": "time",
-				"datasource": "timesheetEdit.StartTime"
+				"datasource": "timesheetEntry:timesheetEdit.StartTime",
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false
 			},
 			"displayName": "Input",
 			"custom": {},
@@ -1009,7 +954,8 @@
 			"props": {
 				"events": [],
 				"moveable": false,
-				"text": "End Time"
+				"text": "End Time",
+				"deletable": true
 			},
 			"displayName": "Label",
 			"custom": {},
@@ -1028,7 +974,12 @@
 				"deletable": false,
 				"className": "fd-input w-full bg-transparent",
 				"type": "time",
-				"datasource": "timesheetEdit.EndTime"
+				"datasource": "timesheetEntry:timesheetEdit.EndTime",
+				"moveable": false,
+				"placeholder": "",
+				"readonly": false,
+				"format": "HH:mm",
+				"dataType": "duration"
 			},
 			"displayName": "Input",
 			"custom": {},
