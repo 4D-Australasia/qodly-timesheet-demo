@@ -90,7 +90,7 @@
 					{
 						"title": "Date",
 						"source": "Date",
-						"format": "Date short",
+						"format": "dd/MM/yyyy",
 						"width": 150,
 						"sorting": false,
 						"dataType": "date",
