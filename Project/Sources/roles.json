@@ -2,32 +2,44 @@
 	"permissions": {
 		"allowed": [
 			{
-				"applyTo": "Project",
+				"applyTo": "Timesheet",
 				"type": "dataclass",
 				"read": [
-					"manageProjects",
+					"guest",
+					"viewAllTimesheets",
 					"enterTimesheets"
 				],
 				"create": [
-					"manageProjects"
+					"guest",
+					"viewAllTimesheets",
+					"enterTimesheets"
 				],
 				"update": [
-					"manageProjects"
+					"guest",
+					"viewAllTimesheets",
+					"enterTimesheets"
 				],
 				"drop": [
-					"manageProjects"
+					"guest",
+					"viewAllTimesheets",
+					"enterTimesheets"
 				],
 				"describe": [
-					"manageProjects"
+					"guest",
+					"viewAllTimesheets",
+					"enterTimesheets"
 				],
 				"execute": [
-					"manageProjects"
+					"guest",
+					"viewAllTimesheets",
+					"enterTimesheets"
 				]
 			},
 			{
 				"applyTo": "Staff",
 				"type": "dataclass",
 				"read": [
+					"guest",
 					"manageStaff",
 					"enterTimesheets"
 				],
@@ -48,6 +60,7 @@
 				"applyTo": "Client",
 				"type": "dataclass",
 				"read": [
+					"guest",
 					"manageClients",
 					"enterTimesheets"
 				],
@@ -68,32 +81,27 @@
 				]
 			},
 			{
-				"applyTo": "Timesheet",
+				"applyTo": "Project",
 				"type": "dataclass",
 				"read": [
-					"viewAllTimesheets",
+					"manageProjects",
 					"enterTimesheets"
 				],
 				"create": [
-					"viewAllTimesheets",
-					"enterTimesheets"
+					"manageProjects"
 				],
 				"update": [
-					"viewAllTimesheets",
-					"enterTimesheets"
+					"manageProjects"
 				],
 				"drop": [
-					"viewAllTimesheets",
-					"enterTimesheets"
+					"manageProjects"
 				],
 				"describe": [
-					"viewAllTimesheets",
-					"enterTimesheets"
+					"manageProjects"
 				],
 				"execute": [
-					"viewAllTimesheets",
-					"enterTimesheets"
-				]
+					"manageProjects"
+4. 				]
 			}
 		]
 	},

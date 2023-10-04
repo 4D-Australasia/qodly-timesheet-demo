@@ -59,6 +59,23 @@
 				"dataclass": "Client",
 				"initialValue": "",
 				"depth": null
+			},
+			{
+				"id": "testTS",
+				"type": "entitysel",
+				"dataclass": "Timesheet",
+				"namespace": "",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
+			},
+			{
+				"id": "ts",
+				"type": "entitysel",
+				"dataclass": "Timesheet",
+				"initialValue": "all",
+				"depth": null,
+				"pageSize": 100
 			}
 		],
 		"styles": []
@@ -221,7 +238,7 @@
 				"yPRi3FJQWm",
 				"3IGikxMIj8",
 				"a_07mR6tmW",
-				"A9kEjMNVgG",
+				"smBE0kQ8Km",
 				"8KKFQFMfKt",
 				"L0h7Y8bd8Y"
 			],
@@ -443,7 +460,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentWidth": 1570,
+				"contentWidth": 1575,
 				"contentHeight": 48
 			},
 			"parent": "yPRi3FJQWm",
@@ -495,7 +512,7 @@
 			},
 			"displayName": "Stylebox",
 			"custom": {
-				"contentWidth": 1570,
+				"contentWidth": 1575,
 				"contentHeight": 48
 			},
 			"parent": "3IGikxMIj8",
@@ -568,225 +585,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"A9kEjMNVgG": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"style": {
-					"display": "flex",
-					"gap": "5px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "mUEYBo0Ycv",
-			"hidden": false,
-			"nodes": [
-				"QUQnq6J6wg",
-				"vErvvKE2bl",
-				"W2yHuxgZ-i"
-			],
-			"linkedNodes": {}
-		},
-		"bcbogBN412": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "left",
-				"style": {
-					"width": "120px"
-				}
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "vErvvKE2bl",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "lD1DLEsMCk",
-				"input": "uhzvD-lUTu"
-			}
-		},
-		"lD1DLEsMCk": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "Time Start",
-				"deletable": true,
-				"style": {
-					"width": "120px"
-				}
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "bcbogBN412",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"uhzvD-lUTu": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Timesheet",
-						"events": [
-							"onchange"
-						],
-						"id": "heMsRuzmSUAs3FrRjv7NzL",
-						"method": "ds.Timesheet.toTimeString",
-						"params": [
-							{
-								"name": "h",
-								"type": "Text",
-								"datasource": "startH",
-								"id": "iep53wE9M9FSfD4TdogNSJ"
-							},
-							{
-								"name": "m",
-								"type": "Text",
-								"datasource": "startM",
-								"id": "dxBpFtedWQFnd3zEVwgpa2"
-							}
-						],
-						"returns": {
-							"name": "timeString",
-							"type": "Text",
-							"datasource": "timesheetEntry:timesheetEdit.StartTime"
-						},
-						"feedback": true
-					}
-				],
-				"deletable": false,
-				"className": "fd-input w-full bg-transparent",
-				"type": "text",
-				"datasource": "startH",
-				"moveable": false,
-				"placeholder": "",
-				"readonly": false,
-				"format": "",
-				"dataType": "string",
-				"style": {
-					"width": "20px"
-				}
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "bcbogBN412",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"_w2AaVfE_a": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "left"
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "vErvvKE2bl",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "xFZixvJ5GR",
-				"input": "kKwVJSnp6k"
-			}
-		},
-		"xFZixvJ5GR": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "Time End",
-				"deletable": true
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "_w2AaVfE_a",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"kKwVJSnp6k": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Timesheet",
-						"events": [
-							"onchange"
-						],
-						"id": "sh1qjC61br7FVi9EgnYKkp",
-						"method": "ds.Timesheet.toTimeString",
-						"params": [
-							{
-								"name": "hours",
-								"type": "Text",
-								"datasource": "endH",
-								"id": "cX68ExZjWw6Cs856Qqntum"
-							},
-							{
-								"name": "minutes",
-								"type": "Text",
-								"datasource": "endM",
-								"id": "oAxvajyPJbvo8HdMAXJJcf"
-							}
-						],
-						"returns": {
-							"name": "tTime",
-							"type": "Text",
-							"datasource": "timesheetEntry:timesheetEdit.EndTime"
-						}
-					}
-				],
-				"deletable": false,
-				"className": "fd-input w-full bg-transparent",
-				"type": "text",
-				"datasource": "endH",
-				"moveable": false,
-				"placeholder": "",
-				"readonly": false,
-				"dataType": "string",
-				"style": {
-					"width": "20px"
-				}
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "_w2AaVfE_a",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
 		"8KKFQFMfKt": {
 			"type": {
 				"resolvedName": "TextInput"
@@ -844,102 +642,6 @@
 			"displayName": "Input",
 			"custom": {},
 			"parent": "8KKFQFMfKt",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"W2yHuxgZ-i": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"style": {
-					"display": "flex",
-					"gap": "10px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "A9kEjMNVgG",
-			"hidden": false,
-			"nodes": [
-				"OtR-KEIfOQ",
-				"6GJ36KphG9"
-			],
-			"linkedNodes": {}
-		},
-		"OtR-KEIfOQ": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": "Duration",
-								"bold": false,
-								"italic": false,
-								"underlined": false,
-								"strikethrough": false
-							}
-						]
-					}
-				],
-				"datasource": ""
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "W2yHuxgZ-i",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"6GJ36KphG9": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "timesheetEntry:timesheetEdit.duration",
-								"children": [
-									{
-										"text": "0",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "number",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "timesheetEntry:timesheetEdit.duration"
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "W2yHuxgZ-i",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}
@@ -1159,263 +861,6 @@
 			"nodes": [],
 			"linkedNodes": {}
 		},
-		"QUQnq6J6wg": {
-			"type": {
-				"resolvedName": "Text"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"doc": [
-					{
-						"type": "paragraph",
-						"children": [
-							{
-								"text": ""
-							},
-							{
-								"type": "datasource",
-								"datasource": "timesheetEntry:timesheetEdit.StartTime",
-								"children": [
-									{
-										"text": "Write your text here",
-										"bold": false,
-										"italic": false,
-										"underlined": false,
-										"strikethrough": false
-									}
-								],
-								"dsType": "string",
-								"format": ""
-							},
-							{
-								"text": ""
-							}
-						]
-					}
-				],
-				"datasource": "timesheetEntry:timesheetEdit.StartTime"
-			},
-			"displayName": "Text",
-			"custom": {},
-			"parent": "A9kEjMNVgG",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"vcByv4GjTW": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "left"
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "vErvvKE2bl",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "9L9aMiUd_O",
-				"input": "BkwmRRiFHM"
-			}
-		},
-		"9L9aMiUd_O": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "",
-				"deletable": true
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "vcByv4GjTW",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"BkwmRRiFHM": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Timesheet",
-						"events": [
-							"onchange"
-						],
-						"id": "e66cxfUVnNvE3Zr953KwvJ",
-						"method": "ds.Timesheet.toTimeString",
-						"params": [
-							{
-								"name": "hours",
-								"type": "Text",
-								"datasource": "startH",
-								"id": "oHjNdzZVpeAEcUNWvN9cC2"
-							},
-							{
-								"name": "minutes",
-								"type": "Text",
-								"datasource": "startM",
-								"id": "pA4qiKinvPxeWFt7SRZG5a"
-							}
-						],
-						"returns": {
-							"name": "tTime",
-							"type": "Text",
-							"datasource": "timesheetEntry:timesheetEdit.StartTime"
-						}
-					}
-				],
-				"deletable": false,
-				"className": "fd-input w-full bg-transparent",
-				"type": "text",
-				"style": {
-					"width": "20px"
-				},
-				"datasource": "startM",
-				"dataType": "string",
-				"moveable": false,
-				"placeholder": "",
-				"readonly": false
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "vcByv4GjTW",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"DZ8-UlOMwo": {
-			"type": {
-				"resolvedName": "TextInput"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"placeholder": "placeholder",
-				"label": "label",
-				"labelPosition": "left"
-			},
-			"displayName": "Text Input",
-			"custom": {},
-			"parent": "vErvvKE2bl",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {
-				"label": "ppX-nA8AqO",
-				"input": "k4lr7rfg3p"
-			}
-		},
-		"ppX-nA8AqO": {
-			"type": {
-				"resolvedName": "Label"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [],
-				"moveable": false,
-				"text": "",
-				"deletable": true
-			},
-			"displayName": "Label",
-			"custom": {},
-			"parent": "DZ8-UlOMwo",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"k4lr7rfg3p": {
-			"type": {
-				"resolvedName": "Input"
-			},
-			"isCanvas": false,
-			"props": {
-				"events": [
-					{
-						"type": "method",
-						"dataclass": "Timesheet",
-						"events": [
-							"onchange"
-						],
-						"id": "j36AnhzrmAHK6juyqbp93b",
-						"method": "ds.Timesheet.toTimeString",
-						"params": [
-							{
-								"name": "hours",
-								"type": "Text",
-								"datasource": "endH",
-								"id": "sAtrsPWG4HxLfJRTeayJEv"
-							},
-							{
-								"name": "minutes",
-								"type": "Text",
-								"datasource": "endM",
-								"id": "qibAELBXMR1Pi7xHpEh5V3"
-							}
-						],
-						"returns": {
-							"name": "tTime",
-							"type": "Text",
-							"datasource": "timesheetEntry:timesheetEdit.EndTime"
-						}
-					}
-				],
-				"deletable": false,
-				"className": "fd-input w-full bg-transparent",
-				"type": "text",
-				"style": {
-					"width": "20px"
-				},
-				"datasource": "endM",
-				"dataType": "string",
-				"moveable": false,
-				"placeholder": "",
-				"readonly": false
-			},
-			"displayName": "Input",
-			"custom": {},
-			"parent": "DZ8-UlOMwo",
-			"hidden": false,
-			"nodes": [],
-			"linkedNodes": {}
-		},
-		"vErvvKE2bl": {
-			"type": {
-				"resolvedName": "StyleBox"
-			},
-			"isCanvas": true,
-			"props": {
-				"events": [],
-				"style": {
-					"display": "flex",
-					"justifyContent": "flex-start",
-					"gap": "5px"
-				}
-			},
-			"displayName": "Stylebox",
-			"custom": {},
-			"parent": "A9kEjMNVgG",
-			"hidden": false,
-			"nodes": [
-				"bcbogBN412",
-				"vcByv4GjTW",
-				"_w2AaVfE_a",
-				"DZ8-UlOMwo"
-			],
-			"linkedNodes": {}
-		},
 		"ydej981cMg": {
 			"type": {
 				"resolvedName": "Button"
@@ -1452,6 +897,142 @@
 			"displayName": "Icon",
 			"custom": {},
 			"parent": "ydej981cMg",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"smBE0kQ8Km": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"gap": "10px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "mUEYBo0Ycv",
+			"hidden": false,
+			"nodes": [
+				"JssQhUhn7Z",
+				"WGdtIErdjD"
+			],
+			"linkedNodes": {}
+		},
+		"JssQhUhn7Z": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "left"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "smBE0kQ8Km",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "Z8OmIxzoyF",
+				"input": "o5l7T3oWOR"
+			}
+		},
+		"Z8OmIxzoyF": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "Start Time"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "JssQhUhn7Z",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"o5l7T3oWOR": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "time",
+				"datasource": "timesheetEdit.StartTime"
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "JssQhUhn7Z",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"WGdtIErdjD": {
+			"type": {
+				"resolvedName": "TextInput"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"placeholder": "placeholder",
+				"label": "label",
+				"labelPosition": "left"
+			},
+			"displayName": "Text Input",
+			"custom": {},
+			"parent": "smBE0kQ8Km",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {
+				"label": "-5VrHW-fXX",
+				"input": "W42iyCAnYM"
+			}
+		},
+		"-5VrHW-fXX": {
+			"type": {
+				"resolvedName": "Label"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"moveable": false,
+				"text": "End Time"
+			},
+			"displayName": "Label",
+			"custom": {},
+			"parent": "WGdtIErdjD",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"W42iyCAnYM": {
+			"type": {
+				"resolvedName": "Input"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"deletable": false,
+				"className": "fd-input w-full bg-transparent",
+				"type": "time",
+				"datasource": "timesheetEdit.EndTime"
+			},
+			"displayName": "Input",
+			"custom": {},
+			"parent": "WGdtIErdjD",
 			"hidden": false,
 			"nodes": [],
 			"linkedNodes": {}

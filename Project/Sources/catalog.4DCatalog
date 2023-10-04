@@ -8,8 +8,8 @@
 		<field name="Client_Id" uuid="1FC6F0C6851942D6AC9A01B51681F861" type="10" store_as_UUID="true" id="3"/>
 		<field name="Project_Id" uuid="39439F235E35433CBCEC3C5DB02301C4" type="10" store_as_UUID="true" id="4"/>
 		<field name="Date" uuid="87EDEE9793A241D5BD6EF2775C7F7797" type="8" id="5"/>
-		<field name="StartTime" uuid="E69F5F89976645E5B0629A2B2EBC62B6" type="10" id="6"/>
-		<field name="EndTime" uuid="A2D3224F68164B1BA3348E0F64F2E6E6" type="10" id="7"/>
+		<field name="StartTime" uuid="E69F5F89976645E5B0629A2B2EBC62B6" type="9" id="6"/>
+		<field name="EndTime" uuid="A2D3224F68164B1BA3348E0F64F2E6E6" type="9" id="7"/>
 		<field name="Reference" uuid="22F6815530964654A47163C3992EC707" type="10" id="8"/>
 		<field name="Notes" uuid="11DA0BD571804AA7967EADA1181FA2EF" type="10" id="9"/>
 		<primary_key field_name="Id" field_uuid="16D2674737844936864B46B615726D90"/>

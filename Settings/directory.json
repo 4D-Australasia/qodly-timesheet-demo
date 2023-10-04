@@ -1,14 +1,14 @@
 {
 	"users": {
 		"designer": {
-			"password": "$2y$10$6.Mh4YUL7NfBbyb3ZH9BwOuahSSeRRGo6gV7FS66pQln6GL0eomDW",
+			"password": "$2b$10$c5zubrrbJXFPZ3OYDnWJKOafLhCvNdviSotm.D9gdMQpjU6.G/WhC",
 			"alias": "Designer"
 		},
 		"administrator": {
 			"alias": "Administrator"
 		},
 		"al": {
-			"password": "$2y$10$7Bk10T60pVs9czl/WaMQzeGeZrv28lKv3rI4H9BrrhSTqcLfNaArW"
+			"password": "$2b$10$LgVX8Xx/QKxdaGzl8TfnMuX5lwSnVtEgDap7WaninUktx4NI7AKeG"
 		}
 	},
 	"sqlSchemaGranters": {
